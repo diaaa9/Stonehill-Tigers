@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lustria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+   <style>
+
+       body {
+   padding: 0px;
+   margin: 0px;
+   background-color: #747d78;
+}
+
+
+.navbar {
+   position: relative;
+   display: flex;
+   padding: 19px;
+   background-color: #000000;
+   justify-content: space-around;
+   align-items: center;
+   margin-right: 18;
+   }
+  
+.nav-items > ul > li {
+   position: relative;
+   display: inline;
+   list-style: none;
+   margin: 10px;
+   padding: 10px 20px;
+   cursor: pointer;
+}
+
+
+.nav-items > ul > li > a {
+   color: white;
+   text-decoration: none;
+}
+
+
+.nav-items > ul > li::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 0.17rem;
+   background-color: #f4f4f4;
+   left: 0;
+   bottom: 0;
+   transform-origin: 0% 100%;
+   transform: scaleX(0);
+   transition: transform 0.3s ease;
+}
+
+
+.nav-items > ul > li:hover::after {
+   transform: scaleX(1);
+}
+
+
+.nav-logo a,
+.nav-button a {
+   color: white;
+   list-style: none;
+   text-decoration: none;
+   display: flex;
+}
+
+
+.nav-logo {
+   font-size: 32px;
+   align-items: center;
+   margin-left: 40px;
+   padding: 20;
+}
+
+
+.nav-button {
+   background-color: #ffffff;
+   border-radius: 50px;
+   position: relative;
+   display: inline-block;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+
+.anim-layer {
+   position: absolute;
+   top: 0;
+   left: 50%;
+   width: 0;
+   height: 100%;
+   background-color: white;
+   transition: width 0.3s ease, left 0.3s ease;
+}
+
+
+.nav-button:hover .anim-layer {
+   width: 100%;
+   left: 0;
+}
+
+
+.nav-button:hover a {
+   color: #141214;
+}
+
+
+.nav-button a {
+   display: block;
+   padding: 10px 20px;
+   color: white;
+   text-decoration: none;
+   position: relative;
+   z-index: 1;
+}
+
+
+#hamburger-menu,
+#mobile-menu {
+   display: none;
+}
+.collapsible {
+  background-color: #5e645d;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #424d46;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #d2d5d3;
+}
+body {
+    font-family: "Poppins","Lustria";
+}
+
+
+   </style>
+   <div class="navbar">
+       <div class="nav-logo">
+         <a><img width="200" src="Untitled_Artwork 2.png" </a>
+       </div>
+       <div class="nav-items">
+         <ul>
+           <li><a href="home.html"> Home </a></li>
+           <li><a href="home.html"> Our misson </a></li>
+           <li><a href="product.html"> Product </a></li>
+           <li><a href="faq.html"> FAQ </a></li>
+           <li><a href="team.html"> Our team </a></li>
+         </ul>
+       </div>
+       <div class="nav-button">
+         <div class="anim-layer"></div>
+       </div>
+       <div id="hamburger-menu">&#9776;</div>
+     </div>
+      <div id="mobile-menu">
+       <div class="mobile-nav-items">
+         <ul>
+           <li><a href="#"> Home </a></li>
+           <li><a href="#"> Services </a></li>
+           <li><a href="#"> About </a></li>
+           <li><a href="#"> Contact </a></li>
+           <li><a href="#"> Home </a></li>
+         </ul>
+       </div>
+       <div class="mobile-nav-button">
+         <div class="anim-layer"></div>
+       </div>
+       <div id="hamburger-cross">&#10006;</div>
+     </div>
+    
+
+
+
+
+
+
+
+
+     
+<center><h2 style="font-size: 50px; color: white;">FAQs</h2></center>
+
+
+
+<div style="margin-left: 100px; margin-right: 100px;">
+
+
+
+
+<button class="collapsible" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif , Times, serif, Courier, monospace;">
+    What is Project Amanat?
+</button>
+<div class="content" style=" color:#424d46 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"  >
+  <p> Project Amanat is a patient monitoring and ventilation system built with Arduino and Blynk IoT. It tracks vital signs and environmental conditions to promote patient well-being and comfort.
+</p>
+</div>
+
+
+<button class="collapsible" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif , Times, serif, Courier, monospace;">
+    What are the two main functions of the system?
+</button>
+<div class="content" style=" color:#424d46 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"  >
+    <p> Our product has 2 different functions.
+    Patient Monitoring is the first. It monitors heart rate and body temperature, sending the data wirelessly to a smartphone or tablet app via Blynk.
+    Environmental Control is the second. It uses a DHT sensor to record temperature and humidity. Based on programmed thresholds, the system can turn on/off a fan to maintain a comfortable environment.
+</div>
+
+
+<button class="collapsible" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif , Times, serif, Courier, monospace;">
+    What vital signs does the system monitor?
+</button>
+<div class="content" style=" color:#424d46 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"  >
+    <p> Currently, the system focuses on heart rate and body temperature.
+</p>
+</div>
+
+<button class="collapsible" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif , Times, serif, Courier, monospace;">
+    Can the system be expanded to monitor other vitals?
+</button>
+<div class="content" style=" color:#424d46 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"  >
+    <p> Yes, with additional sensors, it can be expanded to monitor blood oxygen, respiration rate, or other relevant data points.
+</p>
+</div>
+
+
+<button class="collapsible" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif , Times, serif, Courier, monospace;">
+    How is the data displayed?
+</button>
+<div class="content" style=" color:#424d46 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"  >
+    <p> The Blynk app provides a user-friendly interface to view real-time data in a clear and organised way.
+    </p>
+</div>
+
+<button class="collapsible" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif , Times, serif, Courier, monospace;">
+    Is this a certified medical device?
+</button>
+<div class="content" style=" color:#424d46 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"  >
+    <p> No, it's for monitoring purposes only and should not replace professional medical care.
+    </p>
+</div>
+
+<button class="collapsible" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif , Times, serif, Courier, monospace;">
+    How secure is the data transmission?
+</button>
+<div class="content" style=" color:#424d46 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"  >
+    <p> Blynk offers data encryption options, but it's crucial to research and implement appropriate security measures for your specific use case.
+    </p>
+</div>
+
+<button class="collapsible" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif , Times, serif, Courier, monospace;">
+    What type of fan can be controlled by the system?
+</button>
+<div class="content" style=" color:#424d46 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"  >
+    <p> The system can control a small fan with an appropriate power supply through a relay module.
+    </p>
+</div>
+
+<button class="collapsible" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif , Times, serif, Courier, monospace;">
+    How does the system decide to turn the fan on/off?
+</button>
+<div class="content" style=" color:#424d46 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"  >
+    <p> The system compares temperature and humidity readings to pre-set thresholds. If these thresholds are exceeded, the fan will turn on to regulate the environment.
+    </p>
+</div>
+
+<button class="collapsible" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif , Times, serif, Courier, monospace;">
+    Can the system be used to adjust fan speed?
+</button>
+<div class="content" style=" color:#424d46 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"  >
+    <p> The current version controls the fan on/off state. With additional components, fan speed control might be possible.
+    </p>
+</div>
+
+<button class="collapsible" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif , Times, serif, Courier, monospace;">
+    Can the system be customised for different needs?
+</button>
+<div class="content" style=" color:#424d46 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"  >
+    <p> Yes, the system can be customized by adding sensors, adjusting control parameters, and incorporating features like alarms for abnormal readings.
+    </p>
+</div>
+
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<br>
+</footer>
+<footer style="background-color: black;"><br><br>
+<table style="color: #e7cbae; width: 30%; text-align: center; padding: 20; margin-left: 490px ;">
+    <td><a style="color: #e7cbae;" href="file:///Users/vivaansahu/Documents/projectamanat.html#">Home</a> </td>
+    <td><a style="color: #e7cbae;" href="file:///Users/vivaansahu/Documents/ourmisson.html#">Our misson</a></td>
+    <td><a>Resolution</a></td>
+    <td><a style="color: #e7cbae;" href="file:///Users/vivaansahu/Documents/FAQ.html#">FAQ</a></td>
+    <td><a>Our team</a></td>
+</table>
+<br><br></footer>
+
+</body>
+</html>
