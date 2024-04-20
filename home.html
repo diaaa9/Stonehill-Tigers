@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: ;">
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+        body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #747d78;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    padding: 19px;
+    background-color: #000000;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 18; 
+    @font-face {
+        font-family: ;
+        src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+    }
+    
+    
+}
+
+.nav-items > ul > li {
+    position: relative;
+    display: inline;
+    list-style: none;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.nav-items > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-items > ul > li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.17rem;
+    background-color: #f4f4f4;
+    left: 0;
+    bottom: 0;
+    transform-origin: 0% 100%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-items > ul > li:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-logo a,
+.nav-button a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+}
+
+.nav-logo {
+    font-size: 32px;
+    align-items: center;
+    margin-left: 40px;
+    padding: 20;
+}
+
+.nav-button {
+    background-color: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.anim-layer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-button:hover .anim-layer {
+    width: 100%;
+    left: 0;
+}
+
+.nav-button:hover a {
+    color: #141214;
+}
+
+.nav-button a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+#hamburger-menu,
+#mobile-menu {
+    display: none;
+}
+
+    </style>
+    <div class="navbar">
+        <div class="nav-logo">
+          <a><img width="200" src="Untitled_Artwork 2.png" </a>
+        </div>
+        <div class="nav-items">
+          <ul>
+            <li><a href="home.html"> Home </a></li>
+            <li><a href="mission.html"> Our misson </a></li>
+            <li><a href="product.html"> Product </a></li>
+            <li><a href="faq.html"> FAQ </a></li>
+            <li><a href="team.html"> Our team </a></li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <div class="anim-layer"></div>
+        </div>
+        <div id="hamburger-menu">&#9776;</div>
+      </div>
+  
+      <div id="mobile-menu">
+        <div class="mobile-nav-items">
+          <ul>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> Services </a></li>
+            <li><a href="#"> About </a></li>
+            <li><a href="#"> Contact </a></li>
+            <li><a href="#"> Home </a></li>
+          </ul>
+        </div>
+        <div class="mobile-nav-button">
+          <div class="anim-layer"></div>
+        </div>
+        <div id="hamburger-cross">&#10006;</div>
+      </div>
+     
+
+   <br><br> <center><img width="900" src="home.png"></center><br><br>
+    <br><br>
+<footer style="background-color: #1d2714;"> 
+<center><img width="600" src="amanat.png"></center>
+<center><p style="color: rgb(253, 224, 165); font-family: 'Times New Roman', Times, serif; font-size: 15px; ">"Project Amanat, where innovation meets compassion in healthcare. 
+    <br> We're dedicated to revolutionizing patient monitoring and ventilation, ensuring that every breath counts,no matter where you are in the world. <br>
+    Explore our cutting-edge solutions designed to bridge healthcare disparities and empower better outcomes for all."</p></center> 
+
+<br>
+</footer>
+<footer style="background-color: black;"><br><br>
+<table style="color: #e7cbae; width: 30%; text-align: center; padding: 20; margin-left: 490px ;">
+    <td><a style="color: #e7cbae;" href="home.html">Home</a> </td>
+    <td><a style="color: #e7cbae;" href="misson.html">Our misson</a></td>
+    <td><a>Resolution</a></td>
+    <td><a style="color: #e7cbae;" href="faq.html">FAQ</a></td>
+    <td><a>Our team</a></td>
+</table>
+<br><br></footer>
+
+ 
+</body>
+</html>
