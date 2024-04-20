@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+    
+   <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+
+       body {
+   padding: 0px;
+   margin: 0px;
+   background-color: #747d78;
+}
+
+
+.navbar {
+   position: relative;
+   display: flex;
+   padding: 19px;
+   background-color: #000000;
+   justify-content: space-around;
+   align-items: center;
+   margin-right: 18;
+   @font-face {
+       font-family: ;
+       src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+   }
+  
+  
+}
+
+
+.nav-items > ul > li {
+   position: relative;
+   display: inline;
+   list-style: none;
+   margin: 10px;
+   padding: 10px 20px;
+   cursor: pointer;
+}
+
+
+.nav-items > ul > li > a {
+   color: white;
+   text-decoration: none;
+}
+
+
+.nav-items > ul > li::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 0.17rem;
+   background-color: #f4f4f4;
+   left: 0;
+   bottom: 0;
+   transform-origin: 0% 100%;
+   transform: scaleX(0);
+   transition: transform 0.3s ease;
+}
+
+
+.nav-items > ul > li:hover::after {
+   transform: scaleX(1);
+}
+
+
+.nav-logo a,
+.nav-button a {
+   color: white;
+   list-style: none;
+   text-decoration: none;
+   display: flex;
+}
+
+
+.nav-logo {
+   font-size: 32px;
+   align-items: center;
+   margin-left: 40px;
+   padding: 20;
+}
+
+
+.nav-button {
+   background-color: #ffffff;
+   border-radius: 50px;
+   position: relative;
+   display: inline-block;
+
+
+   overflow: hidden;
+   cursor: pointer;
+}
+
+
+.anim-layer {
+   position: absolute;
+   top: 0;
+   left: 50%;
+   width: 0;
+   height: 100%;
+   background-color: white;
+   transition: width 0.3s ease, left 0.3s ease;
+}
+
+
+.nav-button:hover .anim-layer {
+   width: 100%;
+   left: 0;
+}
+
+
+.nav-button:hover a {
+   color: #141214;
+}
+
+
+.nav-button a {
+   display: block;
+   padding: 10px 20px;
+   color: white;
+   text-decoration: none;
+   position: relative;
+   z-index: 1;
+}
+
+
+#hamburger-menu,
+#mobile-menu {
+   display: none;
+}
+
+
+   </style>
+ 
+   <div class="navbar">
+       <div class="nav-logo">
+         <a><img width="200" src="Untitled_Artwork 2.png" </a>
+       </div>
+       <div class="nav-items">
+         <ul>
+            <li><a href="home.html"> Home </a></li>
+            <li><a href="mission.html"> Our misson </a></li>
+            <li><a href="product.html"> Product </a></li>
+            <li><a href="faq.html"> FAQ </a></li>
+            <li><a href="team.html"> Our team </a></li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <div class="anim-layer"></div>
+        </div>
+        <div id="hamburger-menu">&#9776;</div>
+      </div>
+       <div id="mobile-menu">
+        <div class="mobile-nav-items">
+          <ul>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> Services </a></li>
+            <li><a href="#"> About </a></li>
+            <li><a href="#"> Contact </a></li>
+            <li><a href="#"> Home </a></li>
+          </ul>
+        </div>
+        <div class="mobile-nav-button">
+          <div class="anim-layer"></div>
+        </div>
+        <div id="hamburger-cross">&#10006;</div>
+      </div> 
+
+      <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 52px; text-align: center; color: white;"> Meet Our Team </h1>
+
+      <img src="Dia.png" width="270px" style="padding: 10px;" >
+      <img src="kaya.png" width="270px" style="padding: 10px;" >
+      <img src="vivaan.png" width="270px" style="padding: 10px;" >
+      <img src="julian.png" width="270px" style="padding: 10px;" >
+      <img src="amshel.png" width="270px" style="padding: 10px;" >
+
+<h2 style="color: #b4beb4; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;"> " Teamwork is the ability to work together toward a common vision."</h2>
+<a href="mailto:s27170@stu.stonehill.in" class="email-button">Click here to email about any queries!</a>
+
+<style>
+    .email-button {
+
+display: inline-block;
+
+padding: 10px 20px;
+
+background-color: #8c9a91;
+
+color: #fff;
+
+text-decoration: none;
+
+border-radius: 5px;
+
+font-weight: bold;
+
+transition: background-color 0.3s ease;
+
+position:relative; top: 50px; left: 20px; margin-left:1133px; margin-right:0px;
+
+
+}
+
+
+.email-button:hover {
+
+background-color: #55605a;
+
+}
+</style>
+
+</div>
+    
+
+
+
+ </body>
+</html> 
